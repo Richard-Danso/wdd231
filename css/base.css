@@ -1,0 +1,206 @@
+:root {
+    --primary-color: #0d3b66;
+    --secondary-color: #f4d35e;
+    --accent-color: #ee964a;
+    --background-color: #f8f9fa;
+    --text-color: #2b2d42;
+    --completed-bg: #d4edda;
+    --completed-border: #28a745;
+    --incomplete-bg: #fff3cd;
+    --incomplete-border: #ffc107;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header & Nav */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
+
+#menu-button::before {
+    content: "☰";
+}
+
+#menu-button.open::before {
+    content: "✕";
+}
+
+nav {
+    width: 100%;
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+nav li.active a {
+    background-color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Main Layout */
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+/* Certificate Course Section */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.25rem;
+    border: 1px solid var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    border-left: 6px solid;
+}
+
+.course-card.completed {
+    background-color: var(--completed-bg);
+    border-color: var(--completed-border);
+    color: #155724;
+}
+
+.course-card.incomplete {
+    background-color: var(--incomplete-bg);
+    border-color: var(--incomplete-border);
+    color: #856404;
+}
+
+.credit-summary {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1.25rem;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}

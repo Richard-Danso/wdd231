@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber Directory | Local Chamber of Commerce</title>
+  <meta name="description" content="Explore local businesses and chamber members in our community directory.">
+  <meta name="author" content="Richard Danso">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph / Facebook Meta -->
+  <meta property="og:title" content="Chamber Directory | Local Chamber of Commerce">
+  <meta property="og:description" content="Explore local businesses and chamber members in our community directory.">
+  <meta property="og:image" content="https://username.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/larger.css">
+
+  <script src="js/directory.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="images/Logo.png" alt="Chamber Logo" width="60" height="60">
+      <span class="site-title">Chamber of Commerce</span>
+    </div>
+    <button id="hamburger" aria-label="Toggle Navigation">&#9776;</button>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Business Directory</h1>
+    
+    <div class="views-toggle">
+      <button id="grid-btn" class="active-view">Grid View</button>
+      <button id="list-btn">List View</button>
+    </div>
+
+    <div id="members-container" class="grid-view"></div>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p><strong>Chamber of Commerce</strong></p>
+      <p>100 Main Street, Suite 10</p>
+      <p>info@chamber.org | (555) 123-4567</p>
+    </div>
+    <div class="footer-dev">
+      <p>&copy; <span id="currentyear"></span> Richard Danso | WDD 231</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

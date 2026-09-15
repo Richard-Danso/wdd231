@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Apex Tech Solutions",
+    "address": "104 Innovation Way, Suite 200",
+    "phone": "(555) 019-2831",
+    "website": "https://example.com/apex",
+    "image": "images/apex.png",
+    "membershipLevel": 3,
+    "category": "Technology"
+  },
+  {
+    "name": "Heritage Bakery & Cafe",
+    "address": "42 Main Street",
+    "phone": "(555) 014-9922",
+    "website": "https://example.com/heritage",
+    "image": "images/heritage.png",
+    "membershipLevel": 2,
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Summit Financial Group",
+    "address": "880 Commerce Blvd",
+    "phone": "(555) 018-3341",
+    "website": "https://example.com/summit",
+    "image": "images/summit.png",
+    "membershipLevel": 3,
+    "category": "Finance"
+  },
+  {
+    "name": "Green Valley Landscaping",
+    "address": "1205 Meadow Lane",
+    "phone": "(555) 011-7788",
+    "website": "https://example.com/greenvalley",
+    "image": "images/green.png",
+    "membershipLevel": 1,
+    "category": "Services"
+  },
+  {
+    "name": "Pinnacle Health Clinic",
+    "address": "301 Medical Center Dr",
+    "phone": "(555) 016-4411",
+    "website": "https://example.com/pinnacle",
+    "image": "images/pinacile.png",
+    "membershipLevel": 2,
+    "category": "Healthcare"
+  },
+  {
+    "name": "Beacon Marketing Services",
+    "address": "500 Enterprise Way",
+    "phone": "(555) 013-6655",
+    "website": "https://example.com/beacon",
+    "image": "images/becon.png",
+    "membershipLevel": 1,
+    "category": "Marketing"
+  },
+  {
+    "name": "Urban Style Apparel",
+    "address": "215 Fashion Square",
+    "phone": "(555) 017-8899",
+    "website": "https://example.com/urbanstyle",
+    "image": "images/urban.png",
+    "membershipLevel": 3,
+    "category": "Retail"
+  }
+]

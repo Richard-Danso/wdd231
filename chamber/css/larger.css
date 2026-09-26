@@ -35,3 +35,49 @@
     text-align: left;
   }
 }
+
+@media (min-width: 800px) {
+    #menu-btn {
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    /* CSS Grid Layout for Desktop Home Page */
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "hero hero"
+            "events weather"
+            "spotlights spotlights";
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        grid-area: hero;
+    }
+
+    .events-section {
+        grid-area: events;
+    }
+
+    .weather-section {
+        grid-area: weather;
+    }
+
+    .spotlights-section {
+        grid-area: spotlights;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

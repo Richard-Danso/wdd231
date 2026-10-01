@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Order Submitted</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/larger.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="brand"><span>Sweet Crust Bakery</span></div>
+    </header>
+    <main>
+        <h1>Thank You for Your Order!</h1>
+        <p>We have received your custom order request and will reach out shortly.</p>
+        <div id="form-summary" class="card"></div>
+        <a href="index.html" class="btn">Back to Home</a>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const summary = document.getElementById('form-summary');
+        if (summary) {
+            summary.innerHTML = `
+                <p><strong>Name:</strong> ${params.get('fname')} ${params.get('lname')}</p>
+                <p><strong>Email:</strong> ${params.get('email')}</p>
+                <p><strong>Category:</strong> ${params.get('category')}</p>
+                <p><strong>Notes:</strong> ${params.get('notes')}</p>
+            `;
+        }
+    </script>
+</body>
+</html>

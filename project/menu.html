@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our full menu of over 15 artisanal sourdough breads, pastries, tarts, and beverages.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Sweet Crust Bakery - Menu & Catalog">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://username.github.io/wdd231/project/images/hero.jpg">
+    <title>Sweet Crust Bakery | Menu & Catalog</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/larger.css">
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/pages/menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/SWEET.png" alt="Sweet Crust Logo" width="50" height="50" loading="eager">
+            <span>Sweet Crust Bakery</span>
+        </div>
+        <button id="hamburger-btn" aria-label="Toggle navigation menu">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu & Catalog</a></li>
+                <li><a href="contact.html">Order & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Full Bakery Menu</h1>
+        
+        <!-- Filter Bar -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-category="all">All Items</button>
+            <button class="filter-btn" data-category="bread">Breads</button>
+            <button class="filter-btn" data-category="pastry">Pastries</button>
+            <button class="filter-btn" data-category="dessert">Desserts</button>
+            <button class="filter-btn" data-category="beverage">Beverages</button>
+        </div>
+
+        <section id="catalog-container" class="card-grid"></section>
+    </main>
+
+    <dialog id="item-modal">
+        <div class="modal-content">
+            <button id="close-modal" aria-label="Close dialog">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Sweet Crust Bakery | WDD 231 Final Project</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank" rel="noopener noreferrer">Project Video Demonstration</a></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

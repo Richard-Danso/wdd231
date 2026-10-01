@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Place custom order inquiries for specialty cakes or contact Sweet Crust Bakery team.">
+    <meta name="author" content="Your Name">
+    <title>Sweet Crust Bakery | Custom Order & Contact</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/larger.css">
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/pages/contact.js"></script>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="images/SWEET.png" alt="Sweet Crust Logo" width="50" height="50" loading="eager">
+            <span>Sweet Crust Bakery</span>
+        </div>
+        <button id="hamburger-btn" aria-label="Toggle navigation menu">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu & Catalog</a></li>
+                <li><a href="contact.html" class="active">Order & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-layout">
+        <h1>Special Order & Inquiry Form</h1>
+        <form action="thank-you.html" method="get" class="bakery-form">
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="name@example.com">
+
+            <label for="category">Order Category</label>
+            <select id="category" name="category">
+                <option value="custom_cake">Custom Specialty Cake</option>
+                <option value="catering">Catering / Event Order</option>
+                <option value="general">General Inquiry</option>
+            </select>
+
+            <label for="notes">Details / Customization Notes *</label>
+            <textarea id="notes" name="notes" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Submit Request</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Sweet Crust Bakery | WDD 231 Final Project</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="https://youtu.be/YOUR_VIDEO_ID" target="_blank" rel="noopener noreferrer">Project Video Demonstration</a></p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>

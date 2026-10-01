@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Sourdough Boule", "category": "bread", "price": 7.50, "description": "Classic slow-fermented artisan sourdough.", "featured": true, "image": "images/sourdough.jpg" },
+  { "id": 2, "name": "Butter Croissant", "category": "pastry", "price": 4.00, "description": "Flaky, layered French pastry with organic butter.", "featured": true, "image": "images/croissant.jpg" },
+  { "id": 3, "name": "Chocolate Pain au Chocolat", "category": "pastry", "price": 4.50, "description": "Crisp croissant dough filled with dark chocolate.", "featured": false, "image": "images/chocolate-croissant.jpg" },
+  { "id": 4, "name": "Cinnamon Brioche Roll", "category": "pastry", "price": 5.00, "description": "Rich brioche dough swirled with Saigon cinnamon.", "featured": true, "image": "images/cinnamon-roll.jpg" },
+  { "id": 5, "name": "Rustic Baguette", "category": "bread", "price": 3.75, "description": "Traditional French baguette with a crisp crust.", "featured": false, "image": "images/baguette.jpg" },
+  { "id": 6, "name": "Multigrain Seeded Loaf", "category": "bread", "price": 8.00, "description": "Packed with flax, sunflower, and pumpkin seeds.", "featured": false, "image": "images/seeded-loaf.jpg" },
+  { "id": 7, "name": "Blueberry Almond Tart", "category": "dessert", "price": 6.50, "description": "Fresh blueberries on almond frangipane cream.", "featured": true, "image": "images/blueberry-tart.jpg" },
+  { "id": 8, "name": "Lemon Meringue Tartlet", "category": "dessert", "price": 6.00, "description": "Zesty lemon curd topped with toasted meringue.", "featured": false, "image": "images/lemon-tart.jpg" },
+  { "id": 9, "name": "Espresso Mocha Cake", "category": "dessert", "price": 7.00, "description": "Layered sponge with dark roast coffee buttercream.", "featured": false, "image": "images/mocha-cake.jpg" },
+  { "id": 10, "name": "House Drip Coffee", "category": "beverage", "price": 3.25, "description": "Ethically sourced medium roast blend.", "featured": false, "image": "images/drip-coffee.jpg" },
+  { "id": 11, "name": "Oat Milk Latte", "category": "beverage", "price": 5.25, "description": "Double shot espresso with steamed oat milk.", "featured": false, "image": "images/latte.jpg" },
+  { "id": 12, "name": "Matcha Green Tea Latte", "category": "beverage", "price": 5.50, "description": "Ceremonial grade matcha whisked to perfection.", "featured": false, "image": "images/matcha.jpg" },
+  { "id": 13, "name": "Focaccia with Rosemary", "category": "bread", "price": 6.50, "description": "Extra virgin olive oil, sea salt, and fresh herbs.", "featured": false, "image": "images/focaccia.jpg" },
+  { "id": 14, "name": "Macaron Assortment (6pk)", "category": "dessert", "price": 12.00, "description": "Seasonal variety of delicate French macarons.", "featured": false, "image": "images/macarons.jpg" },
+  { "id": 15, "name": "Iced Hibiscus Berry Tea", "category": "beverage", "price": 4.25, "description": "Refreshing herbal infusion with lemon.", "featured": false, "image": "images/hibiscus-tea.jpg" }
+]

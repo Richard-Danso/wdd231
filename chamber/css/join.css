@@ -1,0 +1,150 @@
+/* Container & Grid Setup */
+.join-main {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.join-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Accessible Form Styling */
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: #fcfcfc;
+  border: 1px solid #d1d5db;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 0.35rem;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+  padding: 0.65rem;
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.membership-levels {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.radio-label {
+  flex-direction: row !important;
+  align-items: center;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.submit-btn {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #1e40af;
+}
+
+/* Membership Level Cards & Load Animation */
+.membership-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.tier-card {
+  background-color: #ffffff;
+  border-left: 6px solid #1e3a8a;
+  border-top: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1.25rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  /* Animation trigger on page load */
+  animation: cardEntrance 1s ease-out forwards;
+  opacity: 0;
+}
+
+/* Entrance Keyframes */
+@keyframes cardEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-trigger {
+  margin-top: 0.75rem;
+  background-color: #f3f4f6;
+  border: 1px solid #9ca3af;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Accessible Native Modals */
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.dialog-wrapper {
+  padding: 1.75rem;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Desktop Multi-column Layout */
+@media (min-width: 768px) {
+  .join-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: start;
+  }
+}

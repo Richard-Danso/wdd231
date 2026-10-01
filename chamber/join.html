@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce | Join Us</title>
+  <meta name="description" content="Apply for membership with the Chamber of Commerce. Select a membership tier and connect with local business leaders.">
+  <meta name="author" content="Richard Danso">
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/join.css">
+  <script src="js/join.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <img src="images/Logo.png" alt="Chamber Logo" width="50" height="50">
+      <span>Chamber of Commerce</span>
+    </div>
+    <nav>
+      <button id="menu-btn" aria-label="Toggle Navigation Menu">&#9776;</button>
+      <ul id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="join-main">
+    <h1>Membership Application</h1>
+
+    <div class="join-grid">
+      <!-- Application Form -->
+      <form method="get" action="thankyou.html" class="join-form">
+        
+        <label>First Name *
+          <input type="text" name="fname" id="fname" required title="Please enter your first name" autocomplete="given-name">
+        </label>
+
+        <label>Last Name *
+          <input type="text" name="lname" id="lname" required title="Please enter your last name" autocomplete="family-name">
+        </label>
+
+        <label>Organizational Title
+          <input type="text" name="title" id="title" title="Title must contain at least 7 letters, hyphens, or spaces" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+        </label>
+
+        <label>Email Address *
+          <input type="email" name="email" id="email" required title="Please enter a valid email address" autocomplete="email" placeholder="example@domain.com">
+        </label>
+
+        <label>Mobile Phone *
+          <input type="tel" name="phone" id="phone" required title="Please enter your telephone number" autocomplete="tel">
+        </label>
+
+        <label>Business / Organization Name *
+          <input type="text" name="organization" id="organization" required title="Please enter your business or organization name" autocomplete="organization">
+        </label>
+
+        <fieldset class="membership-levels">
+          <legend>Membership Level *</legend>
+          <label class="radio-label">
+            <input type="radio" name="membership" value="np" required> NP Membership (Non-Profit - Free)
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="membership" value="bronze"> Bronze Membership
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="membership" value="silver"> Silver Membership
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="membership" value="gold"> Gold Membership
+          </label>
+        </fieldset>
+
+        <label>Business Description
+          <textarea name="description" id="description" title="Provide a brief description of your business"></textarea>
+        </label>
+
+        <!-- Hidden Timestamp Input -->
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <input type="submit" value="Submit Application" class="submit-btn">
+      </form>
+
+      <!-- Membership Information Cards -->
+      <section class="membership-cards">
+        <h2>Membership Tiers</h2>
+
+        <div class="card tier-card">
+          <h3>NP Membership</h3>
+          <p>Designed for non-profit entities at zero cost.</p>
+          <button type="button" class="modal-trigger" data-target="modal-np">View Benefits</button>
+        </div>
+
+        <div class="card tier-card">
+          <h3>Bronze Membership</h3>
+          <p>Essential networking and directory exposure.</p>
+          <button type="button" class="modal-trigger" data-target="modal-bronze">View Benefits</button>
+        </div>
+
+        <div class="card tier-card">
+          <h3>Silver Membership</h3>
+          <p>Enhanced visibility and discounted event pricing.</p>
+          <button type="button" class="modal-trigger" data-target="modal-silver">View Benefits</button>
+        </div>
+
+        <div class="card tier-card">
+          <h3>Gold Membership</h3>
+          <p>Maximum brand exposure with homepage spotlights.</p>
+          <button type="button" class="modal-trigger" data-target="modal-gold">View Benefits</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modals for Tier Benefits -->
+    <dialog id="modal-np">
+      <div class="dialog-wrapper">
+        <button type="button" class="close-btn" aria-label="Close modal">&times;</button>
+        <h3>NP Membership Benefits</h3>
+        <p><strong>Cost:</strong> Free for verified 501(c)(3) organizations</p>
+        <ul>
+          <li>Basic Chamber Directory Listing</li>
+          <li>Access to General Monthly Meetings</li>
+          <li>Community Board Access</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog id="modal-bronze">
+      <div class="dialog-wrapper">
+        <button type="button" class="close-btn" aria-label="Close modal">&times;</button>
+        <h3>Bronze Membership Benefits</h3>
+        <p><strong>Cost:</strong> $150 / year</p>
+        <ul>
+          <li>Standard Directory Listing</li>
+          <li>10% Discount on Training Sessions</li>
+          <li>Access to Networking Events</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog id="modal-silver">
+      <div class="dialog-wrapper">
+        <button type="button" class="close-btn" aria-label="Close modal">&times;</button>
+        <h3>Silver Membership Benefits</h3>
+        <p><strong>Cost:</strong> $300 / year</p>
+        <ul>
+          <li>Enhanced Directory Listing with Logo</li>
+          <li>25% Discount on Special Event Tickets</li>
+          <li>Rotational Homepage Banner Exposure</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog id="modal-gold">
+      <div class="dialog-wrapper">
+        <button type="button" class="close-btn" aria-label="Close modal">&times;</button>
+        <h3>Gold Membership Benefits</h3>
+        <p><strong>Cost:</strong> $500 / year</p>
+        <ul>
+          <li>Priority Directory Placement</li>
+          <li>Permanent Homepage Spotlight Banner</li>
+          <li>Free Admission to Annual Business Gala</li>
+          <li>VIP Sponsorship Opportunities</li>
+        </ul>
+      </div>
+    </dialog>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Chamber of Commerce | WDD231</p>
+    <p id="last-modified"></p>
+  </footer>
+
+</body>
+</html>

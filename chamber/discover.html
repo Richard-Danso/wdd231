@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber Discover Page - Local Features &amp; Demographics</title>
+  <meta name="description" content="Discover points of interest, attractions, and visitor resources provided by the Chamber of Commerce.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/discover.css">
+
+  <!-- JS Module Import -->
+  <script type="module" src="js/discover.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="images/Logo.png" alt="Chamber of Commerce Logo" width="80" height="80">
+      <div class="header-title">
+        <h1>Chamber of Commerce</h1>
+        <p>Connecting Business &amp; Community</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Visitor Message Container (populated via localStorage JS) -->
+    <aside id="visitor-message" class="visitor-banner"></aside>
+
+    <div class="discover-heading">
+      <h2>Discover Our Region</h2>
+      <p>Explore the vibrant culture, economic centers, and historical landmarks that make our community a great place to live and do business.</p>
+    </div>
+
+    <!-- Grid Layout Container using grid-template-areas -->
+    <section class="discover-grid" id="discover-cards">
+      <!-- 8 Cards dynamically injected via discover.js -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Chamber of Commerce | Richard Danso | WDD 231</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>

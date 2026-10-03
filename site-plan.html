@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Crust Artisanal Bakery & Café - Site Plan</title>
+  <!-- Google Fonts import for typography styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* -------------------------------------------------------------
+       COLOR SCHEME VARIABLES & TYPOGRAPHY SETUPS
+       ------------------------------------------------------------- */
+    :root {
+      --primary-color: #5C3A21;    /* Deep Warm Espresso */
+      --secondary-color: #C87D55;  /* Artisan Terracotta */
+      --accent-color: #E2A049;     /* Golden Crust */
+      --bg-color: #FAF5EF;         /* Soft Cream */
+      --text-color: #2D241E;       /* Dark Roast Text */
+      --card-bg: #FFFFFF;
+      --border-color: #E0D5C7;
+      
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'Work Sans', 'Segoe UI', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--bg-color);
+      text-align: center;
+      padding: 2rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent-color);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      font-family: var(--font-heading);
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--secondary-color);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-family: var(--font-heading);
+      color: var(--secondary-color);
+      margin: 1rem 0 0.5rem 0;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Color Palette Display Grid */
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .color-box {
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      text-align: center;
+    }
+
+    .color-swatch {
+      height: 80px;
+      width: 100%;
+    }
+
+    .color-box p {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    /* Typography Samples */
+    .font-sample-heading {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 0.2rem;
+    }
+
+    .font-sample-body {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+
+    /* Wireframe Section Styling */
+    .wireframe-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    @media (min-width: 650px) {
+      .wireframe-container {
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+
+    .wireframe-card {
+      border: 1px dashed #666;
+      padding: 1rem;
+      background: #FAFAFA;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .wireframe-card img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #CCC;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--primary-color);
+      border-top: 1px solid var(--border-color);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Site Plan: Sweet Crust Artisanal Bakery & Café</h1>
+    <p>WDD 231 Final Project Planning Document</p>
+  </header>
+
+  <main>
+
+    <!-- Site Name Section -->
+    <section>
+      <h2>Site Name</h2>
+      <p><strong>Name:</strong> Sweet Crust Artisanal Bakery &amp; Café</p>
+      <p><strong>Reasoning:</strong> This name evokes a cozy, handcrafted baking experience emphasizing quality ingredients ("Artisanal") and freshly baked bread and pastries ("Sweet Crust"). It communicates warmth, hospitality, and specialty café culture.</p>
+      <p><strong>Optional Domain Availability:</strong> <code>sweetcrustbakery.org</code> or <code>sweetcrustcafe.com</code></p>
+    </section>
+
+    <!-- Site Purpose Section -->
+    <section>
+      <h2>Site Purpose</h2>
+      <p>The site serves as a responsive digital hub for local customers and visiting patrons of Sweet Crust Artisanal Bakery &amp; Café. It aims to:</p>
+      <ul>
+        <li>Showcase the seasonal menu of freshly baked breads, pastries, drinks, and lunch offerings retrieved dynamically from a JSON API source.</li>
+        <li>Provide customers with seamless access to business hours, location details, pre-ordering options, and catering inquiries.</li>
+        <li>Engage community members with an interactive product modal for item details, ingredient declarations, dietary tags (e.g., gluten-free, vegan), and saved order preferences stored in <code>LocalStorage</code>.</li>
+      </ul>
+    </section>
+
+    <!-- Scenarios Section -->
+    <section>
+      <h2>Target Audience Scenarios</h2>
+      <p>Target visitors include morning commuters, neighborhood regulars, catering clients, and patrons looking for special diet offerings.</p>
+      <ul>
+        <li><strong>Scenario 1:</strong> "Does Sweet Crust offer gluten-free pastries or vegan sourdough bread, and what are today's featured seasonal specials?"</li>
+        <li><strong>Scenario 2:</strong> "What time does the café open on weekends, where is it located, and how can I submit a bulk order inquiry for a weekend event?"</li>
+      </ul>
+    </section>
+
+    <!-- Color Scheme Section -->
+    <section>
+      <h2>Color Scheme</h2>
+      <p>The chosen palette reflects a warm, rustic atmosphere reminiscent of fresh sourdough, roasted coffee beans, and warm oven light. (This site plan document uses this color scheme exclusively.)</p>
+      
+      <div class="color-grid">
+        <div class="color-box">
+          <div class="color-swatch" style="background-color: #5C3A21;"></div>
+          <p><strong>Primary: Deep Espresso</strong><br><code>#5C3A21</code><br>(Headers, Nav background, Footer)</p>
+        </div>
+        <div class="color-box">
+          <div class="color-swatch" style="background-color: #C87D55;"></div>
+          <p><strong>Secondary: Terracotta</strong><br><code>#C87D55</code><br>(H2 Borders, Buttons, Accent highlights)</p>
+        </div>
+        <div class="color-box">
+          <div class="color-swatch" style="background-color: #E2A049;"></div>
+          <p><strong>Accent: Golden Crust</strong><br><code>#E2A049</code><br>(Call-to-Action text, Badges, Hover states)</p>
+        </div>
+        <div class="color-box">
+          <div class="color-swatch" style="background-color: #FAF5EF; border: 1px solid #E0D5C7;"></div>
+          <p><strong>Background: Soft Cream</strong><br><code>#FAF5EF</code><br>(Page body background)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typography Section -->
+    <section>
+      <h2>Typography</h2>
+      <p>The typography pairing combines a classic serif font for elegant branding with a clean sans-serif for high legibility across mobile and desktop devices.</p>
+      
+      <h3>Heading Font: Playfair Display</h3>
+      <p class="font-sample-heading">Sweet Crust Artisanal Bakery</p>
+      <p>Used for primary headings (<code>h1</code>, <code>h2</code>, <code>h3</code>), logo title, and hero callout sections to convey craftsmanship.</p>
+
+      <h3>Body Font: Work Sans</h3>
+      <p class="font-sample-body">Our bakers use traditional long-fermentation techniques with organic flour sourced from local mills.</p>
+      <p>Used for all paragraph text, navigation menus, product descriptions, form controls, and footer details.</p>
+    </section>
+
+    <!-- Wireframes Section -->
+    <section>
+      <h2>Wireframes</h2>
+      <p>The following layout sketches outline the home page structure across small (mobile) and large (desktop/tablet) viewports. They emphasize a clean mobile-first menu, hero banner, dynamic item grid, and footer location overview.</p>
+      
+      <div class="wireframe-container">
+        <div class="wireframe-card">
+          <h3>Mobile Viewport (Small)</h3>
+          <p>[ Header / Logo / Hamburger Nav ]</p>
+          <p>[ Hero Banner ]</p>
+          <p>[ Daily Specials Slider ]</p>
+          <p>[ Menu Categories (1-col grid) ]</p>
+          <p>[ Hours &amp; Location ]</p>
+          <p>[ Footer ]</p>
+          <!-- Replace src with your local scanned/drawn wireframe image path -->
+          <img src="images/MOBI.png" alt="Hand-drawn mobile wireframe layout for home page">
+        </div>
+
+        <div class="wireframe-card">
+          <h3>Desktop Viewport (Large)</h3>
+          <p>[ Header / Logo | Horizontal Nav Menu ]</p>
+          <p>[ Full-Width Hero Banner with CTA Button ]</p>
+          <p>[ 3-Column Menu Highlights &amp; Filter Tabs ]</p>
+          <p>[ Side-by-Side: Hours/Map &amp; Pre-order Form ]</p>
+          <p>[ Footer Grid: Socials, Quick Links, Copyright ]</p>
+          <!-- Replace src with your local scanned/drawn wireframe image path -->
+          <img src="images/HOB.png" alt="Hand-drawn desktop wireframe layout for home page">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sweet Crust Artisanal Bakery &amp; Café | WDD 231 Final Project Site Plan | Richard Danso</p>
+  </footer>
+
+</body>
+</html>
